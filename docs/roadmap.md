@@ -5,6 +5,8 @@
 - Create a React project using Vite
 - Clean default Vite files
 - Confirm the app runs locally
+- Create .env.example file
+- Configure QuizAPI environment variable
 
 ---
 

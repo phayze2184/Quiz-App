@@ -225,6 +225,7 @@ If confirmed:
 
 - QuizAPI
 - Questions fetched directly from the frontend
+- QuizAPI key stored in environment variables
 
 ### STATE MANAGEMENT
 React state manages:
@@ -235,7 +236,6 @@ React state manages:
 - score
 - remainingTime
 - quizStatus
-
 
 ---
 

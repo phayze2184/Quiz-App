@@ -22,29 +22,38 @@ Core architectural decisions:
 
 ## APP STRUCTURE
 
-```
-src/
-├── components/
-│ ├── QuizSelector.jsx 
-│ ├── QuestionCard.jsx 
-│ ├── AnswerOption.jsx 
-│ ├── FeedbackMessage.jsx 
-│ ├── ExplanationBox.jsx 
-│ ├── TimerBar.jsx 
-│ ├── ExitQuizModal.jsx 
-│ └── ResultsCard.jsx
-├── screens/
-│   ├── HomeScreen.jsx
-│   ├── QuizScreen.jsx
-│   └── ResultsScreen.jsx
-├── services/
-│   └── quizApi.js
-├── data/
-│   └── quizTopics.js
-├── utils/ 
-│   └── shuffleArray.js
-├── App.jsx
-└── main.jsx
+## APP STRUCTURE
+
+```txt
+project-root/
+├── src/
+│   ├── components/
+│   │   ├── QuizSelector.jsx
+│   │   ├── QuestionCard.jsx
+│   │   ├── AnswerOption.jsx
+│   │   ├── FeedbackMessage.jsx
+│   │   ├── ExplanationBox.jsx
+│   │   ├── TimerBar.jsx
+│   │   ├── ExitQuizModal.jsx
+│   │   └── ResultsCard.jsx
+│   ├── screens/
+│   │   ├── HomeScreen.jsx
+│   │   ├── QuizScreen.jsx
+│   │   └── ResultsScreen.jsx
+│   ├── services/
+│   │   └── quizApi.js
+│   ├── data/
+│   │   └── quizTopics.js
+│   ├── utils/
+│   │   └── shuffleArray.js
+│   ├── styles/
+│   │   ├── globals.css
+│   │   └── variables.css
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+├── .env.example
+└── .gitignore
 ```
 
 ### Components
@@ -431,6 +440,20 @@ If a question has no explanation, show a fallback message such as:
 `No explanation available for this question.`
 
 The same explanation is shown whether the answer is correct or incorrect.
+
+## ENVIRONMENT VARIABLES
+
+### Required Variables
+
+```env
+VITE_QUIZ_API_KEY=your_api_key_here
+```
+
+Notes
+- Environment variables are accessed through import.meta.env.
+- API keys should not be hardcoded in source files.
+- .env should be included in .gitignore.
+- .env.example should be committed to the repository.
 
 ## QUIZ LOGIC RULES
 
