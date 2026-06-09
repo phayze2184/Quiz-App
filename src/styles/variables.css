@@ -88,7 +88,7 @@
     --fs-5xl:  3rem;       /* 48px */
 
     /* Line-height */
-    --lh-tight:    0.9;
+    --lh-tight:    1;
     --lh-normal:  1.15;
     --lh-relaxed:  1.5;
 
@@ -129,74 +129,6 @@
     --feedback-error: var(--color-rust);  /* Red — for system errors or destructive actions*/
     --feedback-info: var(--color-blue);  /* Blue — for informational messages or neutral actions */
   
-    /* ============ COMPONENT ============ */
-  
-    /* Topic pill (Default) */
-    --topicpill-default-bg: var(--surface-secondary);
-    --topicpill-default-label: var(--text-primary);
-    --topicpill-default-border-color: var(--border-subtle);
-    --topicpill-border-weight: var(--border-thin);
-    --topicpill-padding-inline: var(--space-7); /* 32px total horizontal padding */
-    --topicpill-padding-block: var(--space-6); /* 24px total vertical padding */
-    --topicpill-radius: var(--radius-sm);
-
-    /* Topic pill (Selected) */
-    --topicpill-selected-bg: var(--accent-secondary-subtle);
-    --topicpill-selected-border: var(--accent-secondary-strong);
-    --topicpill-selected-label: var(--accent-secondary-strong);
-  
-    /* Button (Primary, Secondary: Hover/Active/Focus/Disabled) */
-    --button-primary-padding-inline: var(--space-7);
-    --button-primary-padding-block:  var(--space-5);
-    --button-primary-radius:         var(--radius-pill);
-
-    /* Button (Primary:default) */
-    --button-primary-default-bg:     var(--action-primary-bg);
-    --button-primary-default-text:   var(--action-primary-text);
-    --button-primary-default-border: var(--border-thin) solid var(--color-transparent);
-
-    /* Button (Primary:hover) */
-    --button-primary-hover-bg:     var(--accent-primary-strong);
-    --button-primary-hover-text:   var(--action-primary-text);
-    --button-primary-hover-shadow:
-      0 0 0 4px var(--accent-primary-strong),
-      0 0 0 4px var(--surface-primary) inset;
-
-    /* Button (Primary:active) */
-    --button-primary-active-bg:     var(--action-primary-bg);
-    --button-primary-active-text:   var(--action-primary-text);
-    --button-primary-active-shadow: 0 0 0 2px var(--accent-primary-strong) inset;
-
-    /* Button (Primary:focus) */
-    --button-primary-focus-bg:     var(--action-primary-bg);
-    --button-primary-focus-text:   var(--action-primary-text);
-    --button-primary-focus-shadow:
-      0 0 0 4px var(--feedback-warning, var(--color-orange)),
-      0 0 0 4px var(--accent-primary-strong) inset;
-
-    /* Button (Primary:disabled) */
-    --button-primary-disabled-bg:   var(--color-sand);
-    --button-primary-disabled-text: var(--text-tertiary);
-
-    /* Button (Secondary:default) */
-    --button-secondary-default-bg:     var(--surface-disabled);
-    --button-secondary-default-text:   var(--action-secondary-text);
-    --button-secondary-default-border: var(--border-medium) solid var(--accent-secondary-strong);
-
-    /* Button (Secondary:hover) */
-    --button-secondary-hover-bg:     var(--accent-secondary-subtle);
-    --button-secondary-hover-text:   var(--action-secondary-text);
-    --button-secondary-hover-border: var(--border-medium) solid var(--accent-secondary-strong);
-
-    /* Button (Secondary:active) */
-    --button-secondary-active-bg:     var(--color-transparent);
-    --button-secondary-active-text:   var(--action-secondary-text);
-    --button-secondary-active-border: var(--border-medium) solid var(--text-tertiary);
-
-    /* Button (Secondary:focus) */
-    --button-secondary-focus-bg:     var(--color-transparent);
-    --button-secondary-focus-text:   var(--action-secondary-text);
-    --button-secondary-focus-border: var(--border-medium) solid var(--feedback-warning, var(--color-orange));
 }
 
 @supports (color: oklch(0 0 0)) {
