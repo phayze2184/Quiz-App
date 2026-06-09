@@ -40,19 +40,19 @@
     --color-transparent: transparent;  /* For any time you need a true transparent value. Avoid using rgba(0,0,0,0) or similar in your CSS. */
 
     /* Spacing */
-    --space-1: 4px;    
-    --space-2: 8px;    
-    --space-3: 12px;   
-    --space-4: 16px;   
-    --space-5: 20px;  
-    --space-6: 24px;   
-    --space-7: 32px;   
-    --space-8: 40px;   
-    --space-9: 48px;
-    --space-10: 64px;
-    --space-11: 80px;
-    --space-12: 96px;
-    --space-13: 120px;
+    --space-1:  0.25rem;   /* 4px   */
+    --space-2:  0.5rem;    /* 8px   */
+    --space-3:  0.75rem;   /* 12px  */
+    --space-4:  1rem;      /* 16px  */
+    --space-5:  1.25rem;   /* 20px  */
+    --space-6:  1.5rem;    /* 24px  */
+    --space-7:  2rem;      /* 32px  */
+    --space-8:  2.5rem;    /* 40px  */
+    --space-9:  3rem;      /* 48px  */
+    --space-10: 4rem;      /* 64px  */
+    --space-11: 5rem;      /* 80px  */
+    --space-12: 6rem;      /* 96px  */
+    --space-13: 7.5rem;    /* 120px */
   
     /* Radius */
     --radius-sm:   4px;
@@ -77,26 +77,26 @@
     --fw-bold:     700;
 
     /* Font-size */
-    --fs-sm:   14px;
-    --fs-base: 16px;
-    --fs-lg:   18px;
-    --fs-xl:   20px;
-    --fs-2xl:  24px;
-    --fs-3xl:  30px;
-    --fs-4xl:  36px;   
-    --fs-5xl:  48px;
+    --fs-sm:   0.875rem;   /* 14px */
+    --fs-base: 1rem;       /* 16px */
+    --fs-lg:   1.125rem;   /* 18px */
+    --fs-xl:   1.25rem;    /* 20px */
+    --fs-2xl:  1.5rem;     /* 24px */
+    --fs-3xl:  1.875rem;   /* 30px */
+    --fs-4xl:  2.25rem;    /* 36px */
+    --fs-5xl:  3rem;       /* 48px */
 
     /* Line-height */
-    --lh-tight: 0.9;
+    --lh-tight:    0.9;
     --lh-normal:  1.15;
     --lh-relaxed:  1.5;
 
     /* Letter-spacing */
-    --ls-tight: -0.5;  /* h1 */
-    --ls-normal: 0;     /* body */
-    --ls-wide: 0.25;    /* eyebrow */
-    --ls-wider: 0.5;  /* button */
-    --ls-widest: 1;    /* all-caps button */
+    --ls-tight:   -0.5px;  /* h1 */
+    --ls-normal:   0px;    /* body */
+    --ls-wide:     0.25px; /* eyebrow */
+    --ls-wider:    0.5px;  /* button */
+    --ls-widest:   1px;    /* all-caps button */
   
     /* ============ THEME (semantic) ============ */
     --bg-canvas: var(--color-white-coffee); /*The main screen background behind everything*/   

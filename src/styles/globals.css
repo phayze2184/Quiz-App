@@ -38,7 +38,7 @@ body,
 body {
   font-family: var(--font-ui);
   font-size: var(--fs-base);
-  line-height: var(--lh-body);
+  line-height: var(--lh-relaxed);
   color: var(--text-primary);
   background-color: var(--bg-canvas);
   /* Soft paper glow in two corners (matches the mockup) */
@@ -58,9 +58,9 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.8;
   background-image: radial-gradient(rgba(120, 110, 80, 0.10) 1px, transparent 1px);
-  background-size: 4px 4px;
+  background-size: 12px 12px;
   mix-blend-mode: multiply;
 }
 
@@ -71,22 +71,66 @@ h3,
 h4 {
   font-family: var(--font-display);
   font-weight: var(--fw-semibold);
-  line-height: var(--lh-tight);
-  letter-spacing: var(--ls-tight);
   color: var(--text-primary);
 }
 
+h1 {
+  font-size: clamp(var(--fs-2xl), 5vw, var(--fs-5xl));
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+}
+
+h2 {
+  font-size: clamp(var(--fs-2xl), 3vw, var(--fs-3xl));
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-normal);
+}
+
+h3 {
+  font-size: var(--fs-xl);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-normal);
+}
+
+h4 {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-normal);
+}
+
 p {
+  font-family: var(--font-ui);
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
   color: var(--text-secondary);
 }
+
+/*for inline code snippets in the question text*/
+code, pre {
+  font-family: var(--font-ui);
+  font-size: var(--fs-sm);
+  background: var(--surface-secondary);
+  border-radius: var(--radius-sm);
+}
+
+code {
+  padding: var(--space-1) var(--space-2);
+}
+
+pre {
+  padding: var(--space-4);
+  overflow-x: auto;
+}
+  
 
 small {
   font-size: var(--fs-sm);
   color: var(--text-secondary);
+  line-height: var(--lh-relaxed);
 }
 
 a {
-  color: var(--accent-primary);
+  color: var(--accent-primary-default);
   text-decoration: none;
 }
 
@@ -127,7 +171,7 @@ svg {
 /* ---------- Accessibility ---------- */
 /* Dashed offset ring — the shared keyboard-focus indicator. */
 :focus-visible {
-  outline: var(--border-thin) dashed var(--accent-primary);
+  outline: var(--border-thin) dashed var(--accent-primary-default);
   outline-offset: 2px;
   border-radius: var(--radius-pill);
 }
