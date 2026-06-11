@@ -51,9 +51,9 @@ Order: quiz header → question → answer options → feedback → Next button.
 
 A clock icon + countdown, right-aligned on the same row as the logo.
 
-### 3.2 Progress Bar — **Placement: directly below the header row, full width**
+### 3.2 Timer Progress Bar — Placement: directly below the header row, full width
 
-A full-width pill track with a fill segment indicating progress through the question set.
+A full-width pill track with a fill segment indicating the remaining quiz time. The bar decreases as the global countdown timer decreases.
 
 ### 3.3 Question Counter — **Placement: row below the progress bar, left**
 

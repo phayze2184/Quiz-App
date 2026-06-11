@@ -27,6 +27,7 @@ Initial categories:
 - JavaScript
 - React
 - Python
+- Typescript
 
 Questions are fetched from QuizAPI based on the selected category.
 
@@ -158,6 +159,8 @@ Example messages:
 - Quiz topic selector
 - Start quiz button
 
+The Start Quiz button is disabled by default and becomes enabled once the user selects a quiz topic.
+
 ### QUIZ SCREEN
 
 - Quiz title
@@ -206,7 +209,7 @@ If confirmed:
 
 ### RESULTS SCREEN
 
-- Final score
+- Circular score gauge showing the final score (example: 7/10)
 - Feedback message
 - Return Home button
 

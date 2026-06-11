@@ -323,6 +323,7 @@ This ensures visual consistency across the application and simplifies future des
 
 - Displays the app title or logo, welcome text, topic selector, and Start Quiz button
 - Lets the user choose a topic
+- Keeps the Start Quiz button disabled until a topic is selected
 - Passes the selected topic to `App.jsx`
 - Triggers `startQuiz()` and moves the user to the quiz screen
 
